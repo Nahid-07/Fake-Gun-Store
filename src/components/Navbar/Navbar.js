@@ -1,11 +1,11 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-lg">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Fake Gun Store</a>
+          <a href="" className="btn btn-ghost normal-case text-xl">Fake Gun Store</a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -26,7 +26,7 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className="badge badge-sm indicator-item">8</span>
+                <span className="badge badge-sm indicator-item">{props.counter}</span>
               </div>
             </label>
             <div
