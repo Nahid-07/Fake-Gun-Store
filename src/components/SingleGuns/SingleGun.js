@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "../Modal/Modal";
 
 const SingleGun = (props) => {
 //   console.log(props)
@@ -23,10 +24,13 @@ const SingleGun = (props) => {
           </div>
           <div className="card-actions justify-start">
           <button onClick={props.click} className="btn btn-primary">Buy now</button>
-          <button className="btn btn-secondary">See details</button>
+          <label htmlFor="my-modal-3" className="btn btn-secondary">
+        open modal
+      </label>
           </div>
         </div>
       </div>
+      <Modal name={gun}></Modal>
     </div>
   );
 };
